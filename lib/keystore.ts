@@ -1,7 +1,7 @@
-import { FileMapper, StoreData } from './file-mapper';
+import { DataStore, StoreData } from './datastore';
 
 export class KeyStore {
-  public constructor(private store: FileMapper) {}
+  public constructor(private store: DataStore) {}
 
   public async add(key: string, value: string): Promise<void> {
     return this.store.set(key, value);

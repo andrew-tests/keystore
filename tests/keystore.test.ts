@@ -1,8 +1,8 @@
 import { KeyStore } from '../lib/keystore';
-import { FileMapper } from '../lib/file-mapper';
+import { DataStore } from '../lib/datastore';
 import { writeFileSync } from 'fs';
 
-const store = new KeyStore(new FileMapper('test.json'));
+const store = new KeyStore(new DataStore('test.json'));
 
 describe('KeyStore', () => {
   // Ensure brand new file before each test

@@ -5,7 +5,7 @@ export interface StoreData {
   [key: string]: string;
 }
 
-export class FileMapper {
+export class DataStore {
   private data: Map<string, string> = new Map();
 
   public constructor(private path: string = 'store.json') {}
