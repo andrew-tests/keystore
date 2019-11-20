@@ -4,6 +4,7 @@ const { existsSync } = require('fs');
 
 if (!existsSync('./dist/cli.js')) {
   console.log('run -- `npm run build`');
+  process.exit();
 }
 
 require('./dist/cli.js');
