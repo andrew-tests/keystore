@@ -11,11 +11,11 @@
 
 # Store API
 
-    $ npm run store help
-    $ npm run store add mykey myvalue
-    $ npm run store list
-    $ npm run store get mykey
-    $ npm run store remove mykey
+    $ ./store help
+    $ ./store add mykey myvalue
+    $ ./store list
+    $ ./store get mykey
+    $ ./store remove mykey
 
 ### Demo Images
 
