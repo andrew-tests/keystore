@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/andrew-tests/keystore.svg?branch=master)](https://travis-ci.org/andrew-tests/keystore)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f5615a9c55b3d9574ea3/maintainability)](https://codeclimate.com/github/andrew-tests/keystore/maintainability)
 
 ## Instructions
