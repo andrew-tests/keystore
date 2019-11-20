@@ -1,6 +1,6 @@
 import { existsSync, writeFileSync } from 'fs';
 import { KeyStore } from './keystore';
-import { DataStore } from './datastore';
+import { FileDataStore } from './filedatastore';
 
 const FILE_PATH = 'store.json';
 
@@ -9,7 +9,7 @@ if (!existsSync(FILE_PATH)) {
 }
 
 const [operation, key, value] = process.argv.slice(2);
-const store = new KeyStore(new DataStore(FILE_PATH));
+const store = new KeyStore(new FileDataStore(FILE_PATH));
 
 (async () => {
   switch (operation) {
