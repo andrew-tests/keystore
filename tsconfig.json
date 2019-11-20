@@ -3,8 +3,10 @@
     "target": "esnext",
     "module": "commonjs",
     "strict": true,
+    "outDir": "dist",
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["lib/**/*.ts"]
 }
