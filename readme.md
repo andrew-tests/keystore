@@ -31,8 +31,10 @@
 
 ### Demo Images
 
-*Operations*
-![Preview1](./1.PNG)
+#### Operations
 
-*Tests*
-![Preview2](./2.PNG)
+![Preview1](./1.png)
+
+#### Tests
+
+![Preview2](./2.png)
