@@ -2,13 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = require("fs");
 const keystore_1 = require("./keystore");
-const datastore_1 = require("./datastore");
+const filedatastore_1 = require("./filedatastore");
 const FILE_PATH = 'store.json';
 if (!fs_1.existsSync(FILE_PATH)) {
     fs_1.writeFileSync(FILE_PATH, JSON.stringify([]));
 }
 const [operation, key, value] = process.argv.slice(2);
-const store = new keystore_1.KeyStore(new datastore_1.DataStore(FILE_PATH));
+const store = new keystore_1.KeyStore(new filedatastore_1.FileDataStore(FILE_PATH));
 (async () => {
     switch (operation) {
         case 'add':
