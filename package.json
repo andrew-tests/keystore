@@ -1,25 +1,25 @@
 {
-  "name": "keystore",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "store": "ts-node lib/console",
-    "test": "jest",
-    "coverage": "jest --coverage"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "@types/jest": "^24.0.23",
-    "@types/node": "^12.12.11",
-    "jest": "^24.9.0",
-    "ts-jest": "^24.1.0",
-    "ts-node": "^8.5.2",
-    "typescript": "^3.7.2"
-  }
+	"name": "keystore",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"directories": {
+		"lib": "lib"
+	},
+	"scripts": {
+		"store": "ts-node lib/cli",
+		"test": "jest",
+		"coverage": "jest --coverage"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"@types/jest": "^24.0.23",
+		"@types/node": "^12.12.11",
+		"jest": "^24.9.0",
+		"ts-jest": "^24.1.0",
+		"ts-node": "^8.5.2",
+		"typescript": "^3.7.2"
+	}
 }
