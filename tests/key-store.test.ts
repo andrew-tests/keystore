@@ -1,6 +1,6 @@
-import { KeyStore } from '../lib/keystore';
+import { KeyStore } from '../lib/key-store';
 import { writeFileSync } from 'fs';
-import { FileDataStore } from '../lib/filedatastore';
+import { FileDataStore } from '../lib/file-data-store';
 
 const store = new KeyStore(new FileDataStore('test.json'));
 
@@ -58,8 +58,8 @@ describe('KeyStore', () => {
   });
 });
 
-// import { KeyStore } from '../lib/keystore';
-// import { MemoryDataStore } from '../lib/memorydatastore';
+// import { KeyStore } from '../lib/key-store';
+// import { MemoryDataStore } from '../lib/memory-data-store';
 
 // const memoryStore = new MemoryDataStore();
 // const store = new KeyStore(memoryStore);

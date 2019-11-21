@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = require("fs");
-const keystore_1 = require("./keystore");
-const filedatastore_1 = require("./filedatastore");
+const key_store_1 = require("./key-store");
+const file_data_store_1 = require("./file-data-store");
 const FILE_PATH = 'store.json';
 if (!fs_1.existsSync(FILE_PATH)) {
     fs_1.writeFileSync(FILE_PATH, JSON.stringify([]));
 }
 const [operation, key, value] = process.argv.slice(2);
-const store = new keystore_1.KeyStore(new filedatastore_1.FileDataStore(FILE_PATH));
+const store = new key_store_1.KeyStore(new file_data_store_1.FileDataStore(FILE_PATH));
 (async () => {
     switch (operation) {
         case 'add':

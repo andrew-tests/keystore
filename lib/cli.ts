@@ -1,6 +1,6 @@
 import { existsSync, writeFileSync } from 'fs';
-import { KeyStore } from './keystore';
-import { FileDataStore } from './filedatastore';
+import { KeyStore } from './key-store';
+import { FileDataStore } from './file-data-store';
 
 const FILE_PATH = 'store.json';
 

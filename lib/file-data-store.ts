@@ -1,5 +1,5 @@
 import { promises } from 'fs';
-import { DataStore, StoreData } from './datastore';
+import { DataStore, StoreData } from './data-store';
 const { readFile, writeFile } = promises;
 
 export class FileDataStore implements DataStore {

@@ -1,4 +1,4 @@
-import { DataStore, StoreData } from './datastore';
+import { DataStore, StoreData } from './data-store';
 
 export class KeyStore {
   public constructor(private store: DataStore) {}
